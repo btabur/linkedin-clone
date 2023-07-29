@@ -12,41 +12,41 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <!--- Navabar----->
+      <!-- !Navabar----->
       <nav class="navbar navbar-expand-lg bg-body-tertiary  fixed-top">
         <div class="container">
           <!--logo-->
           <a class="navbar-brand" href="#">
             <i class="fa-brands fa-linkedin fs-2 ms-3 text-primary"></i>
           </a>
-          <form class="d-flex" role="search">
+          <form class="d-flex d-none d-lg-block" role="search">
             <input class="form-control me-2 navbar-search" type="search" placeholder="      Arama Yap" aria-label="Search">
           </form>
-          <div class=" navbar-collapse">
-            <ul class="navbar-nav ms-auto  mb-lg-0 d-flex align-items-center  ">
+          <div class=" navbar">
+            <ul class="navbar ms-auto  mb-lg-0 d-flex align-items-center  gap-5 gap-lg-2 ">
               <li class="nav-item d-flex flex-column align-items-center nav-active position-relative pb-1">
                 <i class="fa-solid fa-house"></i>
-                <a class="nav-link my-0 py-0 " aria-current="page" href="#">Ana Sayfa</a>
+                <a class="nav-link my-0 py-0 d-none d-lg-block " aria-current="page" href="#">Ana Sayfa</a>
               </li>
               <li class="nav-item d-flex flex-column align-items-center  position-relative pb-1 ms-2">
                 <i class="fa-solid fa-user-group text-secondary"></i>
-                <a class="nav-link my-0 py-0 " aria-current="page" href="#">Ağım</a>
+                <a class="nav-link my-0 py-0 d-none d-lg-block" aria-current="page" href="#">Ağım</a>
               </li>
               <li class="nav-item d-flex flex-column align-items-center  position-relative pb-1 ms-2">
                 <i class="fa-solid fa-briefcase text-secondary"></i>
-                <a class="nav-link my-0 py-0 " aria-current="page" href="#">İş İlanları</a>
+                <a class="nav-link my-0 py-0 d-none d-lg-block " aria-current="page" href="#">İş İlanları</a>
               </li>
               <li class="nav-item d-flex flex-column align-items-center  position-relative pb-1 ms-2">
                 <i class="fa-regular fa-comment-dots text-secondary"></i>
-                <a class="nav-link my-0 py-0 " aria-current="page" href="#">Mesajlaşma</a>
+                <a class="nav-link my-0 py-0 d-none d-lg-block" aria-current="page" href="#">Mesajlaşma</a>
               </li>
               <li class="nav-item d-flex flex-column align-items-center  position-relative pb-1 ms-2">
                 <i class="fa-solid fa-bell text-secondary"></i>
-                <a class="nav-link my-0 py-0 " aria-current="page" href="#">Bildirimler</a>
+                <a class="nav-link my-0 py-0 d-none d-lg-block" aria-current="page" href="#">Bildirimler</a>
               </li>
               <li class="nav-item d-flex flex-column align-items-center  position-relative pb-1 ms-2">
                <img class="img-fluid nav-profil" src="images/profil.jpeg" alt="">
-                <a class="nav-link my-0 py-0 nav-profil-text" aria-current="page" href="#">Ben</a>
+                <a class="nav-link my-0 py-0 nav-profil-text d-none d-lg-block" aria-current="page" href="#">Ben</a>
               </li>
               <li class="nav-item d-flex flex-column align-items-center text-secondary ">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
@@ -55,20 +55,22 @@
                 <span>İş İçin</span>
               </li>
             </ul>
-            <a class="text-center nav-premium" href="#">Daha Hızlı işe alın <br> Ücretsiz Deneyin <br> Premium</a>
+            <a class="text-center nav-premium d-none d-lg-block" href="#">Daha Hızlı işe alın <br> Ücretsiz Deneyin <br> Premium</a>
            
           </div>
         </div>
       </nav>
 
-      <!-- Main------>
-      <main>
+      <!-- !Main------>
+      <main >
         <div class="container">
           <div class="row">
-            <!-- left section-->
-            <aside class="col-md-2 offset-md-1 d-none d-sm-block">
+            <!-- !left section-->
+            <aside class="col-md-2 offset-md-1 d-none d-lg-block aside-left">
               <div class="card text-center card-profil ">
+                <!--arkaplan---->
                 <img  src="https://picsum.photos/200/300" alt="" class="img-fluid" >
+                <!-- porfil-->
                 <img class="profil" src="images/profil.jpeg" alt="">
                 <p class="fw-bold fs-5">Balı Tabur</p>
                 <span class="text-small-gray border-bottom-gray px-1">
@@ -96,8 +98,9 @@
               </div>
 
             </aside>
-            <!-- middle section------>
-            <section class="col-md-6">
+            <!-- !middle section------>
+            <section class="col-md-6 middle-section">
+              <!--Gönderi Başlatma kartı-->
               <div class="card">
                 <div class="d-flex align-items-center pe-3">
                   <img class="profil-middle" src="images/profil.jpeg" alt="">
@@ -127,10 +130,101 @@
                     </div>
                 </div>
               </div>
+              <!-- ilk gönderi-->
+              <div class="card my-2">
+                <div class="card-head d-flex align-items-top pt-3">
+                  <img class="profil-middle" src="https://picsum.photos/id/34/200" alt="">
+                  <div class="d-flex flex-column justify-content-start">
+                    <b>Ahmet Demirağa</b>
+                    <span class="text-small-gray">Frontend Developer | Open Work</span>
+
+                    <span class="text-small-gray">4 Saat .
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p style="font-size: 14px;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, hic. Sed et recusandae, doloribus labore voluptatem minima, culpa fugiat consequuntur veritatis deserunt reiciendis sint? Cum.
+                  </p>
+                  <img class="img-fluid w-100 " src="https://picsum.photos/id/123/500/300" alt="">
+                  <a class="d-flex align-items-center gap-1 text-decoration-none border-bottom-gray mt-1" href="#">
+                    <img src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="">
+                    <span class="text-small-gray">3</span>
+                  </a>
+                </div>
+                <div class="card-foot-items d-flex align-items-center justify-content-around pb-3">
+                  <div class="item d-flex align-items-center gap-1 p-2">
+                    <span class="text-secondary lead">Beğen</span>
+                    <i class="fa-regular fa-thumbs-up fs-4"></i>
+                  </div>
+                  <div class="item d-flex align-items-center gap-1 p-2">
+                    <span class="text-secondary lead">Yorum Yap</span>
+                    <i class="fa-regular fa-comment-dots fs-4"></i>
+                  </div>
+                  <div class="item d-flex align-items-center gap-1 p-2">
+                    <span class="text-secondary lead">Paylaş</span>
+                    <i class="fa-regular fa-share-from-square fs-4"></i>
+                  </div>
+                  <div class="item d-flex align-items-center gap-1 p-2">
+                    <span class="text-secondary lead">Gönder</span>
+                    <i class="fa-regular fa-paper-plane fs-4"></i>
+                  </div>
+                </div>
+              </div>
 
 
             </section>
-            <aside class="col-md-3 d-none d-md-block">
+            <aside class="col-md-3 d-none d-md-block aside-right">
+              <!-- sağ ilk kart-->
+              <div class="card">
+                <div class="card-header d-flex justify-content-between ">
+                  <p>Akışınıza Ekleyin</p>
+                  <a href="#" class="text-secondary">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="item d-flex align-items-top">
+                    <img class="profil-middle" src="https://picsum.photos/200" alt="" >
+                    <div class="d-flex flex-column gap-1">
+                      <b>Girişimci Kafası</b>
+                      <span class="text-small-gray">Şirket.Düşünce Kuruluşları</span>
+                      <button class="btn btn-outline-secondary btn-takip">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        <span>Takip Et</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item d-flex align-items-top mt-3">
+                    <img class="profil-middle" src="https://picsum.photos/id/22/200" alt="" >
+                    <div class="d-flex flex-column gap-1">
+                      <b>Btk Akademi</b>
+                      <span class="text-small-gray">Her türlü yazılım kursları ücretsiz</span>
+                      <button class="btn btn-outline-secondary btn-takip">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        <span>Takip Et</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item d-flex align-items-top mt-3">
+                    <img class="profil-middle" src="https://picsum.photos/id/32/200" alt="" >
+                    <div class="d-flex flex-column gap-1">
+                      <b>Udemig</b>
+                      <span class="text-small-gray">Html | css | javascript | React</span>
+                      <button class="btn btn-outline-secondary btn-takip">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        <span>Takip Et</span>
+                      </button>
+                    </div>
+                  </div>
+                  <a class="text-small-gray mt-3 text-decoration-none" href="#">
+                    Tüm tavsiyeleri görüntüle
+                    <i class="fa-solid fa-arrow-right mt-3 ms-2"></i>
+                   </a>
+                 
+                </div>
+              </div>
 
             </aside>
           </div>
